@@ -1,0 +1,3 @@
+Para pasar datos entre tabs tenemos primero que modificar la vista de nuestro tabs.html
+
+Añadiremos [rootParams]="parametros"

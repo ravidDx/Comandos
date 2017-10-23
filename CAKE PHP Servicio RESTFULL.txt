@@ -1,0 +1,15 @@
+//dentro de la clade del controlador colocamos estas lineas de codigo al inicio
+
+    /**PARA SERVICIO RESFULT*/ PAra decodificar peticiones POST/PUT
+    public function initialize(){
+        parent::initialize();
+        $this->loadComponent('RequestHandler');
+    }
+
+
+//En el archivo de rutas config/routes.php colocar estas lineas de codigo dentro de la clase al inicio
+    $routes->extensions(['json','xml']); Configurando peticiones rest para ciertas acciones
+    $routes->resources('Usuarios');
+
+//Ver la documentacion de cake PHP
+  

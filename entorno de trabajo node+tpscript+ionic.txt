@@ -1,0 +1,8 @@
+---- NODE ---
+https://nodejs.org/es/   descargar la version recomendada
+
+--- TYPESCRIPT ---
+npm install – g typescript    ** si hay errores intente hacer << npm install -g npm >>
+
+--- ANGULAR
+npm install -g cordova ionic

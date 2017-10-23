@@ -1,0 +1,40 @@
+//crear aplicativo movil
+ionic start ejemplo1 tabs o (blank)
+
+//levantar servicio
+ionic serve
+ionic 
+//para subir la apk a la plataforma de ionic
+ionic login
+ionic link "numeroDeautenticacion"
+
+si estamos logeados solo ionic link
+el idAutenticacion se coloca en el archivo ionic.config.json
+
+Si ya tenemos el id puesto en el archivo
+solo coloacmos el omando : ionic upload
+
+// Crear nueva pagina
+ionic generate page principal   (principal = nombre de la pagina)
+o
+ionic g page principal
+
+-- se crean 4 archivos q son: .html - module.ts - scss - principal.ts
+
+
+
+
+
+/**/
+Especificar pagina root en "app.copmponent.ts"
+
+/**/
+Especificar Rutas en app.module.ts y crear archivo index.pages.ts dentro de la carpeta page
+
+
+//Crear servicio
+ionic g provider historial
+importar este servicio en app.module
+//Servicios
+import {HttpModule} from '@angular/http';
+y le inyectamos en import

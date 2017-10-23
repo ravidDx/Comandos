@@ -1,0 +1,43 @@
+//Crear Proyecto
+PASO 1..................
+
+#Install cakephp3
+composer create-project --prefer-dist cakephp/app [nome da app]   == ./[nombre de app]
+
+//Iniciar servidor
+bin/cake server
+
+o si le instalamos en la carpeta de xamm htdocs, podemos arranccar apache y levantar el servicio desde esta manera
+
+
+PASO 2............
+
+//cONFIGURAR LA bd
+Creamos una BD 
+Configuramos el archivo : config/app.php del proyecto
+Buscarmos Datasource y procedemos a confifurar
+
+Para conectar a posgresql debemos descomentar en el php.ini alguna lineas
+https://stackoverflow.com/questions/29403450/cakephp-3-is-not-able-to-connect-to-the-database-due-to-a-missing-php-extension
+
+extension = php_intl.dll
+extension = php_pdo_mysql.dll  (Para MSQL)
+extension = php_pdo_pgsql.dll  (posgreSQL)
+intl.default_locale = en_utf8
+intl.error_level = E_WARNING
+
+
+PASO 3......................
+
+//Crear Modelos
+bin/cake bake model usuarios
+
+//Crear Controladores
+bin/cake bake controller usuarios
+
+//Crear vistas
+bin/cake bake template usuarios
+
+
+LISTO.
+
